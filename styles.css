@@ -9,19 +9,36 @@ body {
     margin: 0;
 }
 
+.content {
+    display: flex;
+    justify-items: center;
+}
+
+/* mobile */
+@media only screen and (max-width: 800px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
 #main-image {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 2em;
 }
 
-#citation {
+.citations {
+    margin: 0 2em;
+    max-width: 600px;
+}
+
+.text {
     margin: 20px;
     font-size: 1.5em;
     text-align: center;
     color: #333;
-    max-width: 600px;
 }
 
 #buttons {
@@ -29,6 +46,7 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    margin-bottom: 3em;
 }
 
 button {
